@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="paymentpage.css">
+</head>
+<body>
+    <div class="bgcolor">
+        <div id="container">
+            <div class="nav">
+                <div class="left">
+                    <img src="https://www.orbitz.com/_dms/header/logo.svg?locale=en_US&siteid=70201&2" alt="">
+                </div>
+                <div class="searchdiv">
+                    <input id="search" type="text" placeholder="Search">
+                </div>
+            </div> 
+            <div class="h1tag">
+                <h1>Payment Page</h1>
+                <div class="secure">
+                    <img src="https://constant.myntassets.com/checkout/assets/img/sprite-secure.png" alt="">
+                    <p> 100% SECURE</p>
+                </div>
+            </div>
+        </div>  <!--container div ends here-->
+    
+        <div class="box">
+    
+            <h2>CREDIT/DEBIT CARD</h2>
+    
+            <form action="">
+                <input class="name" type="number" placeholder="Card Number">
+                <input class="name" type="text" placeholder="Name on Card">
+                <input class="number" type="text" placeholder="Valid Till(MM/YY)">
+                <input class="number" type="text" placeholder="CVV">
+                <div class="display_flex">
+                    <input class="tick" type="checkbox">
+                    <p>Save this card for faster payments</p>
+                </div>
+            </form>
+            <button id="pay_btn">PAY NOW</button>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+<script>
+    document.getElementById("pay_btn").addEventListener("click",nextpage);
+    function nextpage(){
+        window.location.href = "payment_success.html"
+    }
+    
+</script>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="cart_Page.css">
+    <script src="https://kit.fontawesome.com/629044acfa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="container">
+        <div class="nav">
+            <div class="left">
+                <img src="https://www.orbitz.com/_dms/header/logo.svg?locale=en_US&siteid=70201&2" alt="">
+            </div>
+            <div class="searchdiv">
+                <input id="search" type="text" placeholder="Search">
+            </div>
+        </div> 
+        <div class="h1tag">
+            <h1>Shopping Cart</h1>
+        </div>
+    </div>  <!--container div ends here-->  
+    <div class="container2">
+        <div class="allitems">
+
+        </div>
+        <div class="prices">
+            <h1>Price Details</h1>
+            <div class="show_flex">
+                <div class="division">
+                    <h3 class="total_price"></h3>
+                    <h3 class="discount_price"></h3>
+                    <h3 class="coupon">Apply Coupon - </h3>
+                </div>
+                <div class="show_price">
+                    <h3 class="item_of_price"></h3>
+                    <h3 class="discounted_price"></h3>
+                    <input class="couponip" type="text" placeholder="Enter Coupon">
+                    <button id="couponbtn">Apply</button>
+                </div>
+            </div>
+
+            <div class="show_flex">
+                <div class="division">
+                    <h2>Total Price</h2>
+                </div>
+                <div class="show_price">
+                   <h2 class="priceafterds"></h2>
+                </div>
+            </div>
+           
+            <div class="paymentbtn">
+                <button id="btn1">PROCEED TO PAYMENT</button>
+            </div>
+        </div>
+    </div>   
+</body>   
+
+<script src="cartpage.js"></script>

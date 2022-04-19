@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="product.css">
+    <script src="https://kit.fontawesome.com/629044acfa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="container">
+        <div class="nav">
+            <div class="left">
+                <img src="https://www.orbitz.com/_dms/header/logo.svg?locale=en_US&siteid=70201&2" alt="">
+                <select name="" class="selecttage">
+                    <option value="More Travel">More Travel</option>
+                    <option value="Stays">Stays</option>
+                    <option value="Flights">Flights</option>
+                    <option value="Packages">Packages</option>
+                    <option value="Cars">Cars</option>
+                    <option value="Cruises">Cruises</option>
+                    <option value="Things to do">Things to do</option>
+                    <option value="Deals">Deals</option>
+                    <option value="Groups & meeting">Groups & meeting</option>
+                    <option value="Travel Blog">Travel Blog</option>
+                </select>
+            </div> 
+            <div class="right">
+                <div> <a class="support" href=""> Espanol</a></div>
+                <div> <a class="support" href="">List your property</a> </div>
+                <div> <a class="support" href="">Support</a></div>
+                <div> <a class="support" href="">Trips</a></div>
+                <div> <a class="support" href="sign_up.html">SignUp/Login</a></div> 
+                <div><i id="cartlogo" class="fas fa-shopping-bag"></i></div>
+            </div>   
+        </div>
+        <div class="bgimg"></div>
+        <div class="options">
+            <div class="tabs">
+                <div>
+                    <div>
+                        <i id="apartment" class="far fa-building"></i>
+                    </div>
+                    <div class="stays">Stays</div>
+                </div>
+                <div>
+                    <div>
+                        <i id="vacation" class="fas fa-home"></i>
+                    </div>
+                    <div class="stays">Vacation rentals</div>
+                </div>
+                <div>
+                    <div>
+                        <i id="fly" class="fas fa-plane"></i>
+                    </div>
+                    <div class="stays">Flights</div>
+                </div>
+                <div>
+                    <div>
+                        <i id="while" class="fas fa-car"></i>
+                    </div>
+                    <div class="stays">Cars</div>
+                </div>
+                <div>
+                    <div>
+                        <i id="window" class="far fa-building"></i>
+                    </div>
+                    <div class="stays">Packages</div>
+                </div>
+                <div>
+                    <div>
+                        <i id="windows" class="far fa-building"></i>
+                    </div>
+                    <div class="stays">Things to do</div>
+                </div>
+            </div>
+        </div>  <!--options div ends here-->
+        <div class="inputbox">
+            <div class="input1">
+                <div>
+                    <i id="location" class="fas fa-map-marker-alt"></i>
+                    <p>Going to</p>
+                </div>
+            </div>
+            <div class="startdate">
+                    <div>
+                        <i id="calender" class="fas fa-calendar-day"></i>
+                        <div>
+                            <p class="feb">Check-in</p>
+                            <p class="feb">Feb-1</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="startdate">
+                <div>
+                    <i id="calender" class="fas fa-calendar-day"></i>
+                    <div>
+                        <p class="feb">Check-in</p>
+                        <p class="feb">Feb-2</p>
+                    </div>
+                </div>
+            </div>
+            <div class="room">
+                <div>
+                    <i id="man" class="fas fa-user"></i>
+                </div>
+                <div>
+                    <p>Travelers</p>
+                    <p>1 room, 2 travelers</p>
+                </div>
+            </div>
+                <button>Search</button>
+        </div><!--iinput box div-->
+        <div id="bgcolor">
+            <div class="info">
+                <p>This year is for you. To see, to go, to do… and to save big. Start 2022 with 22% off select hotels and take the getaway you need. Cheers to you, and enjoying more of this big, exciting world.</p>
+                <p>*Book by 2/2/22 and travel by 8/31/22. See below for Terms.</p>
+            </div>
+            <div class="flexsort">
+                <div class="pricesortdiv">
+                    <select name="" class="priceSort" onchange="handlePriceSort">
+                        <option value="">Price Sort</option>
+                        <option value="high">High to Low</option>
+                        <option value="low">Low to High</option>
+                    </select>
+                </div>
+                <div class="pricesortdiv">
+                    <select name="" class="priceSort" onchange="handlePriceSort">
+                        <option value="">City Sort</option>
+                        <option value="">Punta Cancun</option>
+                        <option value="">Cancun</option>
+                        <option value="">Playa del Carmen</option>
+                    </select>
+                </div> <!--this div is for filter buttons-->
+
+            </div><!--this is to do flex of sort-->
+            
+            <div class="allitems"> </div> <!--products goes here-->
+            <div class="horizontalimg">
+                <div>
+                    <div class="picture1">
+                        <img src="https://forever.travel-assets.com/flex/flexmanager/images/2020/09/28/ORB_VIP_Rewards_img_194x50_20200926.png" alt="">
+                        <p>Create an account—it’s free!
+                           <a class="underline" href="">Become a member</a> 
+                            Already a member? <a class="underline" href="">Sign in. Terms apply</a> </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="picture1">
+                        <img src="https://forever.travel-assets.com/flex/flexmanager/images/2020/09/30/ORB_VIP_VIP_img_194x50_20200930.png" alt="">
+                        <p>VIP Access properties are easy to book - just look for the VIP badge.
+                            <a class="underline" href="">Search hotels</a></p>
+                    </div>
+                </div>
+            </div> <!--horizontal img div ends here-->
+            <div class="tandt">
+                <h1>Terms and Conditions</h1>
+            </div>
+            <div class="travel">
+                <p>All travel is subject to frequently changing governmental restrictions--please check federal, state and local advisories before scheduling trips.</p>
+                <p>Travel and Redemption Period: Sale starts on 12:01am CST January 10, 2022 and ends on 11:59pm CST February 2, 2022. Selected travel dates apply and will vary by property.</p>
+                <p>Hotels: Offers valid at participating hotels only. Minimum night stay may be required and rules, restrictions, and blackout dates may apply. Please check individual property for details. Hotel prices displayed are per room per stay based on the cheapest double room available on the specific dates shown. Prices are updated regularly and are accurate when published. Applicable discount, if any, will be applied to the price of selected hotels, excluding taxes and other fees. Hotel savings are based upon Orbitz’s everyday hotel rates, excluding taxes and other fees for the date(s) searched. Additional terms may apply.</p>
+                <p>Vacation Rental: Offers valid at participating vacation rental properties only. Minimum night stay may be required and rules, restrictions, and blackout dates may apply. Please check individual property for details. Property prices displayed are per night for stays on the specific dates shown and do not include taxes, fees, or damage deposit details. Prices and availability may change depending on number of people. Prices are updated regularly and are accurate when published. Applicable discount, if any, will be applied to the price of selected properties, excluding taxes and other fees. Additional terms may apply.</p>
+                <p>Air Pricing: Sample air prices are quoted for one adult and include taxes and fees for round-trip travel on the promoted airline from the specified airports, inclusive of all taxes. Prices do not include baggage fees that may be charged by the applicable airline. Actual price may vary based on time/date of search, booking date, travel dates, origin, and destination, and blackout periods may apply. Please check airline for details. Lower fares may be available to selected destinations. Prices, quoted in U.S. dollars, are updated regularly and are accurate when published. Portions of these flights may be operated by the airlines code-share partners. Seats are limited and may not be available on all flights/dates. Fares and rules are subject to change without notice. Tickets are nontransferable and nonrefundable. Read the complete penalty rules for changes and cancellations applicable to the fare you're considering booking.</p>
+                <p>Package: Package prices quoted are per person per stay based on the cheapest return flights and two people sharing the cheapest double room at participating hotels, inclusive of all taxes, on the specific dates shown, and blackout periods may apply. Please check individual property and airline for details Package prices do not include resort fees or other fees charged directly by the included hotel. Package prices do not include baggage fees or other fees charged directly by the airline for the included flight. Prices are updated regularly and are accurate when published. Savings based on the price of the hotel + flight booked together, as compared to the price of the same components booked separately. Savings will vary based on origin/destination, length of trip, stay dates and selected travel supplier(s). Savings are not available on all packages. Package offers are subject to all applicable terms and conditions for hotel and air. Additional terms may apply.</p>
+                <p>Activity: Prices displayed are for activities on the specific dates shown, and include promotional discounts referred to. Blackout periods may apply. Please check individual activity for details. Discounts are applied to the standard price of selected activities excluding applicable taxes and fees. Activities prices displayed are per person based on the cheapest offer available, inclusive of all taxes and service fees. Prices are updated regularly and are accurate when published. Blackout periods may apply. Offers are subject to limited availability and may be discounted without notice. Please check individual activity for details and to confirm prices, availability, and applicable terms and conditions.</p>
+                <p>Usual booking terms and conditions apply. See <a class="underline" href="">http://www.orbitz.com/p/info-other/legal.htm.</a></p>
+            </div>
+            <div class="footer">
+                <div class="imgurl">
+                    <img src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg" alt="">
+                </div>
+                <div class="imgurl1">
+                    <h4>Company</h4>
+                    <a href=""><p>About</p></a>
+                    <a href=""><p>Jobs</p></a>
+                    <a href=""><p>List your property</p></a> 
+                    <a href=""><p>Partnerships</p></a>
+                    <a href=""><p>Newsroom</p></a>
+                    <a href=""><p>Investor Relations</p></a>
+                    <a href=""><p>Site Map</p></a>
+                    <a href=""><p>Orbitz Rewards</p></a>
+                    <a href=""><p>Advertising</p></a>
+                </div>
+                <div class="imgurl1">
+                    <h4>Explore</h4>
+                    <a href=""><p>Hotels in United States</p></a>
+                    <a href=""><p>Vacation Rentals in US</p></a>
+                    <a href=""><p>Car Rentals in United States</p></a> 
+                    <a href=""><p>Domestic Flights</p></a>
+                    <a href=""><p>Vacation Packages in US</p></a>
+                    <a href=""><p>Orbitz Reviews</p></a>
+                    <a href=""><p>Orbitz Coupons</p></a>
+                    <a href=""><p>LGBTQ Travel</p></a>
+                    <a href=""><p>Unique Accommodations</p></a>
+                    <a href=""><p>Travel Blog</p></a>
+                </div>
+                <div class="imgurl1">
+                    <h4>Policies</h4>
+                    <a href=""><p>Privacy Policy</p></a>
+                    <a href=""><p>Terms of Use</p></a>
+                    <a href=""><p>Orbitz Rewards Terms</p></a> 
+                    <a href=""><p>Do not sell my personal information</p></a>
+                </div>
+                <div class="imgurl1">
+                    <h4>Help</h4>
+                    <a href=""><p>Support</p></a>
+                    <a href=""><p>Cancel your hotel or vacation rental booking</p></a>
+                    <a href=""><p>Cancel your flight</p></a> 
+                    <a href=""><p>Refund timelines, policies & processes</p></a>
+                    <a href=""><p>Use an Orbitz Coupon</p></a>
+                </div>
+            </div>
+            <hr class="line">
+            <div class="copywrite">
+                <p>© 2021 Orbitz, LLC, an Expedia Group Company. All rights reserved.</p>
+                <p>Orbitz, Orbitz.com, and the Orbitz logo are trademarks or registered trademarks of Orbitz, LLC. CST# 2083930-50.</p>
+            </div>
+        </div> <!--this is the div for bgcolor-->
+    </div> <!--id container div ends here-->    
+</body>
+</html>
+
+<script src="product.js"></script>

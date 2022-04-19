@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Success</title>
+    <link rel="stylesheet" href="payment_success.css">
+</head>
+<body>
+    <div class="bgcolor">
+        <div id="container">
+            <div class="nav">
+                <div class="left">
+                    <img src="https://www.orbitz.com/_dms/header/logo.svg?locale=en_US&siteid=70201&2" alt="">
+                </div>
+                <div class="searchdiv">
+                    <input id="search" type="text" placeholder="Search">
+                </div>
+            </div> 
+        </div> 
+        <div class="pay">
+            <div class="click">
+                <img src="http://craftizen.org/wp-content/uploads/2019/02/successful_payment_388054.png" alt="" width="15%" >
+                <h1>Successful Booking !</h1>
+            </div>
+            <div class="explore">
+                <button id="explore_btn">Explore More</button>
+            </div>
+        </div>
+    </div> <!--bgcolor div ends here-->
+</body>
+</html>
+
+<script>
+     document.getElementById("explore_btn").addEventListener("click",nextpage);
+    function nextpage(){
+        window.location.href = "index.html"
+    }
+    
+</script>
